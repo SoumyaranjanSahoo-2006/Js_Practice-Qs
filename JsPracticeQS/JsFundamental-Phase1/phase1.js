@@ -174,11 +174,73 @@ Input                       Output
 Length = 15                 Area = 150
 Width = 10*/
 
-console.log("=====Ans-8=====");
+console.log("=====Ans-9=====");
 //===================================
 
 let length = 18;
 let width = 12;
 
-let area = length * width;
-console.log(`The area of the rectangle is ${area}.`);
+let areaOfRec = length * width;
+console.log(`The area of the rectangle is ${areaOfRec}.`);
+
+/*Q10. Area of Circle
+Formula
+πr²
+
+Use
+Math.PI
+*/
+console.log("=====Ans-10=====");
+//===================================
+let r = 5;
+let area = Math.PI * Math.pow(5,2);
+
+console.log(`The area of the circle is ${area}`);
+
+/*
+Q11. Celsius to Fahrenheit
+Formula
+(F = C × 9/5 + 32) */
+console.log("=====Ans-11=====");
+//===================================
+let celsius = 24;
+let fahrenheit = celsius * (9/5) + 32;
+console.log(`We take the Celsius is ${celsius} so the Fahrenheit = ${fahrenheit} `);
+
+/*Q12. Fahrenheit to Celsius
+Formula
+(C = (F−32)×5/9) */
+console.log("=====Ans-12=====");
+//===================================
+fahrenheit = 77;
+
+celsius = (77-32)*5/9;
+
+console.log(`We take the Fahrenheit is ${fahrenheit} so the Celsious = ${celsius}`)
+
+/*
+Q13. Simple Interest
+Formula
+(P × R × T)/100 */
+console.log("=====Ans-13=====");
+//===================================
+
+let principaleP = 10000;
+let rateR = 5;
+let timeT = 3;
+
+let simpleIntrest = (principaleP * rateR * timeT)/100;
+
+console.log(`If the principal ammount is ${principaleP}, intrest rate is ${rateR} % and time is ${timeT} years then the simple intrest is ${simpleIntrest}`);
+
+/*Q14. Compound Interest (Bonus)
+Formula
+Compound Amount
+A = P × (1 + R/100)^T
+where P = Principal, R = Rate, T = Time in years */
+
+console.log("=====Ans-14 =====");
+//===================================
+
+let compoundAmo = principaleP * Math.pow((1+rateR/100), 3);
+console.log(`Compound intrest = ${compoundAmo}`);
