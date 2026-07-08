@@ -1,3 +1,5 @@
+//!-------------------------- Level 1: Variables & Output--------------------------
+
 // Q1. Print Your Introduction
 
 console.log("=====Ans-1=====");
@@ -83,7 +85,7 @@ console.log(fruit);
 console.log(vegi);
 console.log(roll);
 
-//! Level 2: Data Types
+//!-------------------------- Level 2: Data Types--------------------------
 /*
 Q5. Identify Data Types
 Store
@@ -149,7 +151,7 @@ console.log("=====Ans-7=====");
 
 console.log(`My name is ${name}. I am ${age} years old.`);
 
-//! Level 3: Operators
+//! -----------------------Level 3: Operators---------------------------
 /* Q8. Calculator
 Take two numbers.
 Print
@@ -245,7 +247,7 @@ console.log("=====Ans-14 =====");
 let compoundAmo = principaleP * Math.pow((1+rateR/100), 3);
 console.log(`Compound intrest = ${compoundAmo}`);
 
-//! Level 4: Type Conversion
+//! ---------------------Level 4: Type Conversion-------------------------
 /*
 Q15.Convert "25" to Number.*/
 console.log("=====Ans-15=====");
@@ -291,3 +293,90 @@ let check2 = Number("abc");
 
 console.log(check1); // 123
 console.log(check2);  //NaN
+
+
+//!-------------------- Level 5: Input & Output--------------------
+/* Q19.Ask user
+What is your name?
+Print
+Hello Soumyaranjan! */
+console.log("=====Ans-19=====");
+//===================================
+
+// let yourName = prompt("What is your Name?")
+// console.log(`Hello, ${yourName}`);
+
+/*Q20.Ask user
+Enter your age
+Print
+You are 20 years old. */
+console.log("=====Ans-20=====");
+//===================================
+// let yourAge = prompt("Enter your Age: ");
+// console.log(`You are ${yourAge} years old.`);
+
+
+/*Q21.Ask for two numbers.
+Print their sum.*/
+console.log("=====Ans-21=====");
+//===================================
+// let sumNum1 =Number( prompt("Add num a = "));
+// let sumNum2 = Number(prompt("Add num b = "));
+// console.log(`Sum of the two number is ${sumNum1+sumNum2}`);
+
+/*Q22.Take length and width from user.
+Print rectangle area.*/
+console.log("=====Ans-22=====");
+//===================================
+// let ipWidth =Number( prompt("Enter width = "));
+// let iplength = Number(prompt("Enter length = "));
+// console.log(`Area of the rectangle is ${ipWidth * iplength}`);
+
+//!--------------------- Level 6: Mixed Practice--------------------------
+// Q23.
+
+// Take birth year.
+
+// Print age.
+
+// Q24.
+
+// Take your name and favorite language.
+
+// Output
+
+// Hi Soumyaranjan!
+// Your favorite language is JavaScript.
+// Q25.
+
+// Convert minutes into hours.
+
+// Example
+
+// 150 minutes
+
+// Output
+
+// 2 hours 30 minutes
+// Q26.
+
+// Convert seconds into
+
+// Hours
+// Minutes
+// Seconds
+// Q27.
+
+// Find square and cube of a number.
+
+// Q28.
+
+// Find average of 5 numbers.
+
+// Q29.
+
+// Convert Rupees to Paisa.
+
+// Q30.
+
+// Convert Kilometers to Meters.
