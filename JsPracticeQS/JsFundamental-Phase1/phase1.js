@@ -323,6 +323,7 @@ console.log("=====Ans-21=====");
 // let sumNum1 =Number( prompt("Add num a = "));
 // let sumNum2 = Number(prompt("Add num b = "));
 // console.log(`Sum of the two number is ${sumNum1+sumNum2}`);
+//=====================================
 
 /*Q22.Take length and width from user.
 Print rectangle area.*/
@@ -333,50 +334,102 @@ console.log("=====Ans-22=====");
 // console.log(`Area of the rectangle is ${ipWidth * iplength}`);
 
 //!--------------------- Level 6: Mixed Practice--------------------------
-// Q23.
+/* Q23. Take birth year. Print age. */
+console.log("=====Ans-23=====");
+//===================================
+// let birtYear = prompt("What is your birth year? ");
+// const currentYear = new Date().getFullYear();
 
-// Take birth year.
+// let yourAge = currentYear - birtYear;
+// console.log(`Hii, You are ${yourAge} years old.`);
 
-// Print age.
 
-// Q24.
 
-// Take your name and favorite language.
+/* Q24. Take your name and favorite language.
 
-// Output
+        Output
+          Hi Soumyaranjan!
+          Your favorite language is JavaScript.*/
+console.log("=====Ans-24 =====");
+//===================================
 
-// Hi Soumyaranjan!
-// Your favorite language is JavaScript.
-// Q25.
+// let yName = prompt("Hii Put your name: ");
+// let favLang = prompt("Put your Favorite language: ");
 
-// Convert minutes into hours.
+// console.log(`Hi ${yName}! \n Your favorite language is ${favLang}.`);
 
-// Example
+/* Q25.Convert minutes into hours.
+Example
+  150 minutes
+Output
+  2 hours 30 minutes */
+console.log("=====Ans-25 =====");
+//===================================
 
-// 150 minutes
+let totalMinutes = 160;
 
-// Output
+let hours = Math.floor(totalMinutes/60);
+let minutes = totalMinutes % 60;
 
-// 2 hours 30 minutes
-// Q26.
+console.log(hours +" hours "+ minutes +"minutes");
 
-// Convert seconds into
+/*
+Q26.Convert seconds into
+Hours
+Minutes
+Seconds */
+console.log("=====Ans-26 =====");
+//===================================
 
-// Hours
-// Minutes
-// Seconds
-// Q27.
+let totalSeconds = 6845;
 
-// Find square and cube of a number.
+let totalMiniute = Math.floor(totalSeconds/60);
 
-// Q28.
+let sTotalHours = Math.floor(totalMiniute/60);
+let sTotalMinute = totalMiniute % 60;
+let seconds = totalSeconds % 60;
 
-// Find average of 5 numbers.
+console.log(sTotalHours+" hours " +sTotalMinute +" minute " + seconds +" seconds" );
 
-// Q29.
+// Q27. Find square and cube of a number.
 
-// Convert Rupees to Paisa.
+console.log("=====Ans-27 =====");
+//===================================
+let theNum = 5;
 
-// Q30.
+let squareOfNum = Math.pow(theNum,2);
+let cubeOfNum = Math.pow(theNum,3);
 
-// Convert Kilometers to Meters.
+console.log(`Square and Cube of ${theNum} is ${squareOfNum} and ${cubeOfNum} respectively. `)
+  
+// Q28. Find average of 5 numbers.
+
+console.log("=====Ans-28 =====");
+//===================================
+
+let avNum1 = 10;
+let avNum2 = 7;
+let avNum3 = 8;
+let avNum4 = 9;
+let avNum5 = 7.5;
+
+let average = (avNum1 + avNum2 + avNum3 + avNum4 + avNum5)/5;
+console.log(`The average of ${avNum1}, ${avNum2}, ${avNum3}, ${avNum4} and ${avNum5} is ${average}.`);
+// Q29. Convert Rupees to Paisa.
+
+console.log("=====Ans-29 =====");
+//===================================
+let rupee = 455.52;
+let paisa = rupee * 100;
+
+console.log(`${rupee} rupee is ${paisa} paisa. `);
+
+// Q30. Convert Kilometers to Meters.
+
+console.log("=====Ans-30 =====");
+//===================================
+
+let km = 120;
+let meter = km * 1000;
+
+console.log(`${km} Kilometer(km) = ${meter}meter(m).`);
