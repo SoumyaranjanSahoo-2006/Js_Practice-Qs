@@ -244,3 +244,50 @@ console.log("=====Ans-14 =====");
 
 let compoundAmo = principaleP * Math.pow((1+rateR/100), 3);
 console.log(`Compound intrest = ${compoundAmo}`);
+
+//! Level 4: Type Conversion
+/*
+Q15.Convert "25" to Number.*/
+console.log("=====Ans-15=====");
+//===================================
+let number1 = "25";
+console.log(number1);
+number1 = Number(number1);
+console.log(number1);
+
+/*Q16.
+Convert 100 to String.*/
+
+console.log("=====Ans-16=====");
+//===================================
+let number2 = 100;
+console.log(number2);
+number2 = String(number2);
+console.log(number2);
+
+// Q17. Convert true false to Numbers.
+console.log("=====Ans-17=====");
+//===================================
+
+let condition1 = true;
+console.log(condition1);
+condition1 = Number(condition1);
+console.log(condition1);
+
+let condition2 = false;
+console.log(condition2);
+condition2 = Number(condition2);
+console.log(condition2);
+
+/*Q18. Check
+Number("123")
+Number("abc")
+Understand why one gives 123 and the other gives NaN.*/
+console.log("=====Ans-18=====");
+//===================================
+
+let check1 = Number("123");
+let check2 = Number("abc");
+
+console.log(check1); // 123
+console.log(check2);  //NaN
