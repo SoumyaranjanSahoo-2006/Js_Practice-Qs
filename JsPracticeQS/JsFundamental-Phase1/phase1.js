@@ -433,3 +433,73 @@ let km = 120;
 let meter = km * 1000;
 
 console.log(`${km} Kilometer(km) = ${meter}meter(m).`);
+
+
+//! --------------------------- Challenge Questions ---------------------------
+
+/* Q31. Take radius.
+Print
+    Diameter
+    Circumference
+    Area */
+console.log("=====Ans-31 =====");
+//===================================
+
+let radius = 7;
+
+let diameter = 2 * radius;
+let circumference = 2 * Math.PI * radius;
+let areaOfCircle = Math.PI * Math.pow(radius, 2);
+
+console.log(`The radious of circle is ${radius} so,\nDiameter = ${diameter} \nCircumference = ${circumference} \nArea = ${areaOfCircle} `);
+
+
+/*Q32. Take principal, rate, and time.
+Print both
+      Simple Interest
+      Total Amount */
+console.log("=====Ans-32 =====");
+//===================================
+
+let principal = 5000;
+let rate = 5;
+let time = 3;
+
+let simpleInt = (principal * rate * time)/100;
+let totalAmmount = (principal + simpleIntrest);
+
+console.log(`Simple intrest is ${simpleInt}`);
+console.log(`Total ammount ${totalAmmount}`);
+
+/*
+Q33. Take marks of
+English, Maths, Science, Computer, SST
+Print
+    Total
+    Average
+    Percentage */
+
+/* 
+Q34. Take two numbers.
+Print
+    Maximum
+    Minimum
+    Difference */
+
+
+
+/*
+
+Q35.
+
+Create a mini profile card.
+
+Example:
+
+-------------------------
+Name      : Soumyaranjan
+Age       : 20
+College   : HIT
+Branch    : CSE
+Course    : JavaScript
+------------------------- */
