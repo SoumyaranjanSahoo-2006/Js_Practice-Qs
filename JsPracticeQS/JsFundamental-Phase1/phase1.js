@@ -480,40 +480,40 @@ Print
     Percentage */
 console.log("=====Ans-33 =====");
 //===================================
-let fullMark = Number(prompt("Enter your full mark per subject: "));
+// let fullMark = Number(prompt("Enter your full mark per subject: "));
 
-let english = Number(prompt("Enter yor English mark: "));
-if(english > fullMark){
-  english = Number(prompt("Sorry, enter yor English mark according the full mark of sub: "));
-}
+// let english = Number(prompt("Enter yor English mark: "));
+// if(english > fullMark){
+//   english = Number(prompt("Sorry, enter yor English mark according the full mark of sub: "));
+// }
 
-let math = Number(prompt("Enter yor Math mark: "));
-if(math > fullMark){
-  math = Number(prompt("Sorry, enter yor Math mark according the full mark of sub: "));
-}
+// let math = Number(prompt("Enter yor Math mark: "));
+// if(math > fullMark){
+//   math = Number(prompt("Sorry, enter yor Math mark according the full mark of sub: "));
+// }
 
-let science = Number(prompt("Enter yor Science mark: "));
-if(science > fullMark){
-  science = Number(prompt("Sorry, enter yor Science mark according the full mark of sub: "));
-}
+// let science = Number(prompt("Enter yor Science mark: "));
+// if(science > fullMark){
+//   science = Number(prompt("Sorry, enter yor Science mark according the full mark of sub: "));
+// }
 
-let computer = Number(prompt("Enter yor Computer mark: "));
-if(computer > fullMark){
-  computer = Number(prompt("Sorry, enter yor Computer mark according the full mark of sub: "));
-}
+// let computer = Number(prompt("Enter yor Computer mark: "));
+// if(computer > fullMark){
+//   computer = Number(prompt("Sorry, enter yor Computer mark according the full mark of sub: "));
+// }
 
-let sst = Number(prompt("Enter yor SSt mark: "));
-if(sst > fullMark){
-  sst = Number(prompt("Sorry, enter yor SST mark according the full mark of sub: "));
-}
+// let sst = Number(prompt("Enter yor SSt mark: "));
+// if(sst > fullMark){
+//   sst = Number(prompt("Sorry, enter yor SST mark according the full mark of sub: "));
+// }
 
-let totalMark = (english + math + science + computer + sst);
-let averageMark = (totalMark)/ 5;
-let percentage = (totalMark / (fullMark*5) ) * 100;
+// let totalMark = (english + math + science + computer + sst);
+// let averageMark = (totalMark)/ 5;
+// let percentage = (totalMark / (fullMark*5) ) * 100;
 
-console.log(`Your total mark is ${totalMark}. `);
-console.log(`Your average mark is ${averageMark}. `);
-console.log(`Your total percentage is ${percentage}. `);
+// console.log(`Your total mark is ${totalMark}. `);
+// console.log(`Your average mark is ${averageMark}. `);
+// console.log(`Your total percentage is ${percentage}. `);
 
 
 /* Q34. Take two numbers.
@@ -521,12 +521,34 @@ Print
     Maximum
     Minimum
     Difference */
+console.log("=====Ans-34 =====");
+//===================================
+let numa = Number(prompt("Enter the number A: "));
+let numb = Number(prompt("Enter the number B: "));
+
+let maximum ;
+let minimum;
+if(numa > numb){
+  maximum = numa;
+}
+else{
+  minimum = numa;
+}
+
+if(numb > numa ){
+  maximum = numb;
+}else{
+  minimum = numb;
+}
+
+let difference = Math.abs(numa - numb);  //abs for converting the negative into positive.
+
+console.log(`The maximum of the two number is ${maximum} and minimum is ${minimum}`);
+console.log(`The difference between the two number is ${difference}`);
 
 
 
-/*
-
-Q35.
+/*Q35.
 
 Create a mini profile card.
 
