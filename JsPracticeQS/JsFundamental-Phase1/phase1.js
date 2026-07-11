@@ -480,36 +480,36 @@ Print
     Percentage */
 console.log("=====Ans-33 =====");
 //===================================
-let fullMark = prompt("Enter your full mark per subject: ");
+let fullMark = Number(prompt("Enter your full mark per subject: "));
 
-let english = prompt("Enter yor English mark: ");
-if(english < fullMark){
-  english = prompt("Sorry, enter yor English mark according the full mark of sub: ");
+let english = Number(prompt("Enter yor English mark: "));
+if(english > fullMark){
+  english = Number(prompt("Sorry, enter yor English mark according the full mark of sub: "));
 }
 
-let math = prompt("Enter yor Math mark: ");
-if(math < fullMark){
-  math = prompt("Sorry, enter yor Math mark according the full mark of sub: ");
+let math = Number(prompt("Enter yor Math mark: "));
+if(math > fullMark){
+  math = Number(prompt("Sorry, enter yor Math mark according the full mark of sub: "));
 }
 
-let science = prompt("Enter yor Science mark: ");
-if(science < fullMark){
-  science = prompt("Sorry, enter yor Science mark according the full mark of sub: ");
+let science = Number(prompt("Enter yor Science mark: "));
+if(science > fullMark){
+  science = Number(prompt("Sorry, enter yor Science mark according the full mark of sub: "));
 }
 
-let computer = prompt("Enter yor Computer mark: ");
-if(computer < fullMark){
-  computer = prompt("Sorry, enter yor Computer mark according the full mark of sub: ");
+let computer = Number(prompt("Enter yor Computer mark: "));
+if(computer > fullMark){
+  computer = Number(prompt("Sorry, enter yor Computer mark according the full mark of sub: "));
 }
 
-let sst = prompt("Enter yor SSt mark: ");
-if(sst < fullMark){
-  sst = prompt("Sorry, enter yor SST mark according the full mark of sub: ");
+let sst = Number(prompt("Enter yor SSt mark: "));
+if(sst > fullMark){
+  sst = Number(prompt("Sorry, enter yor SST mark according the full mark of sub: "));
 }
 
 let totalMark = (english + math + science + computer + sst);
 let averageMark = (totalMark)/ 5;
-let percentage = (totalMark / fullMark ) * 100;
+let percentage = (totalMark / (fullMark*5) ) * 100;
 
 console.log(`Your total mark is ${totalMark}. `);
 console.log(`Your average mark is ${averageMark}. `);
