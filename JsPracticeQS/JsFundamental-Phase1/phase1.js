@@ -523,37 +523,33 @@ Print
     Difference */
 console.log("=====Ans-34 =====");
 //===================================
-let numa = Number(prompt("Enter the number A: "));
-let numb = Number(prompt("Enter the number B: "));
+// let numa = Number(prompt("Enter the number A: "));
+// let numb = Number(prompt("Enter the number B: "));
 
-let maximum ;
-let minimum;
-if(numa > numb){
-  maximum = numa;
-}
-else{
-  minimum = numa;
-}
+// let maximum ;
+// let minimum;
+// if(numa > numb){
+//   maximum = numa;
+// }
+// else{
+//   minimum = numa;
+// }
 
-if(numb > numa ){
-  maximum = numb;
-}else{
-  minimum = numb;
-}
+// if(numb > numa ){
+//   maximum = numb;
+// }else{
+//   minimum = numb;
+// }
 
-let difference = Math.abs(numa - numb);  //abs for converting the negative into positive.
+// let difference = Math.abs(numa - numb);  //abs for converting the negative into positive.
 
-console.log(`The maximum of the two number is ${maximum} and minimum is ${minimum}`);
-console.log(`The difference between the two number is ${difference}`);
+// console.log(`The maximum of the two number is ${maximum} and minimum is ${minimum}`);
+// console.log(`The difference between the two number is ${difference}`);
 
 
 
-/*Q35.
-
-Create a mini profile card.
-
+/*Q35. Create a mini profile card.
 Example:
-
 -------------------------
 Name      : Soumyaranjan
 Age       : 20
@@ -561,3 +557,95 @@ College   : HIT
 Branch    : CSE
 Course    : JavaScript
 ------------------------- */
+
+console.log("=====Ans-35 =====");
+//===================================
+
+let sName = "Soumyaranjan";
+let sAge = 20;
+let sCollege = "HIT";
+let sBranch = "CSE";
+let sCourse = "JavaScript";
+
+console.log("------------------------------");
+console.log(`Name      : ${sName}`);
+console.log(`Age       : ${sAge}`);
+console.log(`College   : ${sCollege}`);
+console.log(`Branch    : ${sBranch}`);
+console.log(`Course    : ${sCourse}`);
+console.log("------------------------------");
+
+
+
+//! =========================== mini project -phase1 ============================================
+
+console.log(`========== mini project -phase1 ========\n========================================`);
+
+/*Final Mini Project (Phase 1)
+
+Build a Student Information System that:
+
+Takes input for:
+Name
+Age
+College
+Branch
+Five subject marks
+Calculates:
+Total marks
+Average
+Percentage
+Displays all the information in a clean format using template literals. */
+
+let stName = prompt("Enter your full name");
+let stUpName = stName.toUpperCase();
+let stAge = prompt("Enter your age");
+
+let stCollege = prompt("Enter your college name");
+let stUpClg = stCollege.toUpperCase();
+
+let stBranch = prompt("Enter your Branch");
+let stUpBran = stBranch.toUpperCase();
+
+
+let fullMark = Number(prompt("Enter your full mark per subject: "));
+
+let english = Number(prompt("Enter your English mark: "));
+if(english > fullMark){
+  english = Number(prompt("Sorry, enter your English mark according the full mark of sub: "));
+}
+
+let math = Number(prompt("Enter your Math mark: "));
+if(math > fullMark){
+  math = Number(prompt("Sorry, enter your Math mark according the full mark of sub: "));
+}
+
+let science = Number(prompt("Enter your Science mark: "));
+if(science > fullMark){
+  science = Number(prompt("Sorry, enter your Science mark according the full mark of sub: "));
+}
+
+let computer = Number(prompt("Enter your Computer mark: "));
+if(computer > fullMark){
+  computer = Number(prompt("Sorry, enter your Computer mark according the full mark of sub: "));
+}
+
+let sst = Number(prompt("Enter your SSt mark: "));
+if(sst > fullMark){
+  sst = Number(prompt("Sorry, enter your SST mark according the full mark of sub: "));
+}
+
+let totalMark = (english + math + science + computer + sst);
+let averageMark = (totalMark)/ 5;
+let percentage = (totalMark / (fullMark*5) ) * 100;
+
+console.log(`Name    : ${stUpName}`);
+console.log(`Age     : ${stAge}`);
+console.log(`College : ${stUpClg}`);
+console.log(`Branch  : ${stUpBran}`);
+console.log("==============================");
+
+
+console.log(`Your total mark is ${totalMark}. `);
+console.log(`Your average mark is ${averageMark}. `);
+console.log(`Your total percentage is ${percentage}. `);
